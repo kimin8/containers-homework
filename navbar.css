@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary: #1D63ED;
+    --secondary: #17191E;
+    --accent: #E5F2FC;
+    --secondary-accent: #00084D;
+    --info: #555;
+    --bg-color-1: #f9f9f9;
+}
+
+nav {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+}
+
+.navbar-nav {
+    gap: 40px;
+}
+
+.navbar-brand > span {
+    color: #17191E;
+    font-size: 1.7rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link {
+    color: #2d2e32;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link:hover {
+    color: #1D63ED;
+}
+
+.fa-docker {
+    color: #1D63ED;
+}
+
+.fa-bars {
+    color: #17191E;
+}
+
+@media (max-width: 1200px) {
+    .navbar-nav {
+        gap: 0px;
+    }
+}
