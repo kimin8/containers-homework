@@ -10,6 +10,13 @@
 
     <!-- Link CSS Files -->
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="definition.css">
+    <link rel="stylesheet" href="applications.css">
+    <link rel="stylesheet" href="questions.css">
+    <link rel="stylesheet" href="conclusion.css">
+    <link rel="stylesheet" href="footer.css">
+
 </head>
   <body>
 
@@ -27,24 +34,178 @@
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav d-flex">
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">Дефиниция</a>
+                        <a href="#definition" class="nav-link">Дефиниция</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#projects" class="nav-link">Приложения</a>
+                        <a href="#applications" class="nav-link">Приложения</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link">Ползи</a>
+                        <a href="#questions" class="nav-link">Въпроси</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link">Заключение</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Въпроси</a>
+                        <a href="#conclusion" class="nav-link">Заключение</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Landing page -->
+    <section id="home">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-7 d-flex flex-column justify-content-center">
+                    <h1 class="display-2 home-title"><span style="color: #ffcc66;">Контейнерите</span> и защо ни трябват?</h1>
+                    <p class="home-information">Свят, в който кодът работи без проблем със съвместимостта във всяка среда.</p>
+                
+                    <button class="btn btn-light"><a href="#definition" class="landing-link">Какво е контейнер?
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a></button>
+                </div>
+
+                <div class="col-1">
+                    <img src="infrastructure-management.svg" alt="infrastructure-management">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Definition -->
+    <section id="definition">
+        <div class="container align-items-center">
+            <div class="row">
+                <div class="col-4 order-1">
+                    <img src="container-orchestration.svg" alt="container-orchestration">
+                </div>
+                <div class="col-6 order-2 d-flex justify-content-center flex-column">
+                    <h1 class="display-4 definition-title">Какво са контейнери?</h1>
+
+                    <p class="definition-information">
+                        Контейнерите представляват начин за пакетиране на софтуерни приложения, който включва всичко необходимо за изпълнението на
+                        приложението като код, библиотеки, runtime среда и системни зависимости.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications -->
+    <section id="applications">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="applications-title display-4">Ползи на контейнерите 🪄</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <i class="fa-solid fa-people-arrows"></i>
+                    <h3 class="applications-mini-title">Изолация</h3>
+                    <p class="applications-information">Контейнерите могат да се изпълняват на всеки компютър с инсталиран Docker, независимо от операционната система.</p>
+                </div>
+                <div class="col-4">
+                    <i class="fa-solid fa-gauge"></i>
+                    <h3 class="applications-mini-title">Скорост</h3>
+                    <p class="applications-information">Контейнерите са изолирани един от друг, така че не могат да си пречат взаимно. Това прави по-сигурно да се изпълняват множество приложения на един и същи компютър.</p>
+                </div>
+                <div class="col-4">
+                    <i class="fa-brands fa-docker" id="fa-docker"></i>
+                    <h3 class="applications-mini-title">Преносимост</h3>
+                    <p class="applications-information">Контейнерите могат да се стартират и пускат бързо, което ги прави добър избор за приложения, които трябва да се мащабират бързо.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questions -->
+    <section id="questions">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-11">
+                    <h1 class="questions-title display-4">Често задавани въпроси относно контейнерите 🤔</h1>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-11">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Как работят контейнерите?
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Когато контейнерът се стартира, контейнерният runtime създава ново пространство за процеси за приложението. Пространството на процеса е изолирано от останалата част на системата, така че приложението не може да пречи на други процеси. 
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Къде могат да се използват контейнери?
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Използват се за внедряване на уеб приложения, тъй като лесно могат да се мащабират според нуждите на създателите на сайта. Те са чудесен инструмент и за микроуслуги. Микроуслугите са малки, независими услуги, които комуникират помежду си по мрежа. Контейнерите могат да се използват за пакетиране и внедряване на всяка микроуслуга поотделно.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Какъв проблем решават контейнерите?
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                В началото на 21 век компаниите са могли да публикуват само по едно приложение на една операционна система за всеки сървър. Ако са искали да използват повече от една операционна система би им трябвал цял нов сървър за нея. Впоследствие настъпва виртуализацията, но това все още не решава проблема с едно приложение на ОС. Тогава биват създадени контейнерите и вече компаниите могат да имат много по приложения за всяка една ОС в един единствен сървър.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section id="conclusion">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-11">
+                    <h1 class="conclusion-title display-4">Заключение</h1>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-11">
+                    <p class="conclusion-text">
+                        Контейнерите са мощен инструмент, който може да се използва за подобряване на разработването, внедряването и управлението на софтуерни приложения. Те са леки, преносими и сигурни, което ги прави добър избор за широк спектър от приложения. Всеки, който смята да се развива в ИТ сферата рано или късно ще се сблъска с тях и не трябва да ги подценява.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-11 d-flex justify-content-between">
+                    <span class="copyright-text">Copyright © 2024. All rights are reserved</span>
+                    
+                    <div class="socials">
+                        <a href="https://bg.linkedin.com/in/kimi-nikolov-1a9145205" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/kimin8" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>

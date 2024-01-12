@@ -9,42 +9,25 @@
     --bg-color-1: #f9f9f9;
 }
 
-nav {
-    background-color: var(--primary);
-    box-shadow: 0 0 10px rgba(0,0,0,.09);
+#footer {
+    height: 5rem;
+    display: flex;
+    align-items: center;
 }
 
-.navbar-nav {
-    gap: 40px;
-}
-
-.navbar-brand > span {
-    color: #fff;
-    font-size: 1.7rem;
+.copyright-text {
+    color: #1c6bf8;
+    font-size: 1.6rem;
     font-weight: 900;
-    font-family: 'Poppins', sans-serif;
 }
 
-.nav-link {
-    color: #fff;
-    font-weight: 800;
-    font-size: 1.2rem;
-    font-family: 'Mulish', sans-serif;}
-
-.nav-link:hover {
-    color: #ffcc66;
+.socials > a > i {
+    color: #1c6bf8;
+    font-size: 2rem;
 }
 
-.fa-docker {
-    color: #fff;
-}
-
-.fa-bars {
-    color: #fff;
-}
-
-@media (max-width: 1200px) {
-    .navbar-nav {
-        gap: 0px;
-    }
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
