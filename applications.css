@@ -64,3 +64,19 @@
     flex-direction: column;
     align-items: center;
 }
+
+@media (max-width: 1200px) {
+    #applications > div > div:nth-child(2) {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    #applications {
+        height: 100rem;
+    }
+
+    #applications > div > div:nth-child(2) > div {
+        width: 30rem;
+    }
+}

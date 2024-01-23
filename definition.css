@@ -60,3 +60,28 @@
         align-items: center;
     }
 }
+
+@media (max-width: 915px) {
+    #definition > div > div > div.col-4.order-1 {
+        display: none;
+    }
+
+    #definition > div > div {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #definition > div > div > div.col-6.order-2.d-flex.justify-content-center.flex-column > h1 {
+        text-align: center;
+    }
+
+    #definition > div > div > div.col-6.order-2.d-flex.justify-content-center.flex-column > p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    #definition > div > div > div.col-6.order-2.d-flex.justify-content-center.flex-column > p {
+        width: 100%;
+    }
+}

@@ -39,3 +39,15 @@
     text-align: center;
     margin-bottom: 4rem;
 }
+
+@media (max-width: 1200px) {
+    #questions {
+        height: 50rem;
+    }
+}
+
+@media (max-width: 767px) {
+    #questions {
+        height: 70rem;
+    }
+}
